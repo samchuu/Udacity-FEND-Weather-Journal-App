@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Journal</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+ <body>
+ 
+<div class= "container">
+  <div class ="header">
+    <h1>Weather Journal App</h1>
+  </div>
+  <div class="boxes">
+  <div class ="box1">
+    <div>Enter city here</div>
+    <label for="zip"></label>
+    <div><input type="text" id="zip" placeholder="enter city"></div>
+  </div>
+  <div class ="box2">
+    <label for="feelings">How are you feeling today?</label>
+    <div><textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="8" cols="20"></textarea></div>
+    <button id="generate" type = "submit"> Generate </button>
+  </div>
+</div>
+ 
+   <div id = "entryHolder">
+    <div id = "date"></div> 
+   <div id = "temp"></div>
+   <div class="entry">Most Recent Entry</div>
+   <div id = "content"></div>
+</div>
+<footer>
+  <a href="#"><img src="img/facebook.svg" alt="facebook" class="social"></a>
+  <a href="#"><img src="img/instagram.svg" alt="instagram" class="social"></a>
+  <a href="#"><img src="img/twitter.svg" alt="twitter" class="social"></a>
+</footer>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+
+
+</html>
+
+
