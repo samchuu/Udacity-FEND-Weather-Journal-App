@@ -1,16 +1,8 @@
 async function getWeather(input) {
   const myKey = "af83090e7a77e9d30aca75a3c92a3d77";
-
   //make request to url
-
-  const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${myKey}`
-  );
-
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${myKey}`);
   const data = await response.json();
-
-  console.log(data);
-
   return data;
 }
 
@@ -64,7 +56,8 @@ const button = document.getElementById("generate");
 button.addEventListener("click", () => {
   const currentVal = search.value;
 
-  getWeather(currentVal).then((data) => {
+  getWeather(currentVal)
+  .then((data) => {
     //call a UI method//
     answer(data);
    
